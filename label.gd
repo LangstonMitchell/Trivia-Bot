@@ -11,8 +11,7 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("q"):
 		label.text = "QUESTION:"
 		line = database.get_csv_line()
-		#self.text = line[0]
-		self.text = "kapskpkaps"
+		self.text = line[0]
 		self.add_theme_font_size_override("font_size", 50) 
 	elif event.is_action_pressed("a"):
 		label.text = "ANSWER:"
